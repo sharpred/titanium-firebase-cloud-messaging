@@ -52,6 +52,8 @@ public class TiFirebaseMessagingService extends FirebaseMessagingService
 			if (CloudMessagingModule.getInstance() != null) {
 				CloudMessagingModule.getInstance().onMessageReceived(msg);
 			}
-		}
+		} else {
+            Log.e(TAG, "Message Notification Empty");
+        }
 	}
 }
